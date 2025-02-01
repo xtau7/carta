@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="musica-fondo" src="song_luv.mp3" loop></audio> <!-- Asegúrate de que el archivo de música esté en la misma carpeta -->
+    <div class="sobre-container" onclick="mostrarCarta()">
+        <div id="sobre">
+            <div class="tapa"></div>
+            <div class="base"></div>
+        </div>
+        <div id="carta" class="pagina">
+            <div class="mensaje" id="pagina-1">
+                <h1>Querida <span id="nombre-novia">frami mngrita </h1>
+                <p>Quiero que sepas cuánto te amo y aprecio. Eres el sol que ilumina mis días y la luna que guía mis noches. Cada momento que paso contigo es un tesoro, y no puedo imaginar mi vida sin ti a mi lado.</p>
+                <p>Con todo mi amor.
+            </div>
+            <div class="mensaje" id="pagina-2"> <!-- Parte de la foto eliminada -->
+                <p>Tu risa es mi melodía favorita. No hay nada que desee más que pasar mi vida contigo y hacerte feliz cada día.</p>
+            </div>
+            <div class="mensaje" id="pagina-3">
+                <p>Cada momento contigo es mágico, y me haces sentir como la persona más afortunada del mundo. Gracias por ser tú, por ser mi compañera, mi amiga y mi amor.</p>
+            </div>
+            <div class="mensaje" id="pagina-final">
+                <h1>Gracias por leer, mi amor.</h1>
+                <p>Espero que esta carta te haya hecho sonreír tanto como me haces sonreír tú cada día.</p>
+            </div>
+            <button onclick="anteriorPagina()" class="boton-navegacion">Anterior</button>
+            <button onclick="siguientePagina()" class="boton-navegacion">Siguiente</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
